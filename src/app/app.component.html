@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">Share Point System</mat-toolbar>
+<!-- Container for sidebar(s) + page content -->
+<ng-sidebar-container>
+
+    <!-- A sidebar -->
+    <ng-sidebar [(opened)]="_opened">
+      <p>Sidebar contents</p>
+    </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+      <button (click)="_toggleSidebar()">Toggle sidebar</button>
+    </div>
+
+</ng-sidebar-container>
+<app-meta-sender></app-meta-sender>
